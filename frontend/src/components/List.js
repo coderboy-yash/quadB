@@ -7,29 +7,27 @@ export default function List() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   axios
-    .delete("https://hodlinfo-backend.onrender.com/delete-data")
+    .delete("https://quadb-abkv.onrender.com/delete-data")
     .then((response) => {
       console.log("data deleted", response);
     });
   useEffect(() => {
-    axios
-      .get("https://hodlinfo-backend.onrender.com/fetch-data")
-      .then((response) => {
-        console.log("data fetched", response);
-        axios
-          .get("https://hodlinfo-backend.onrender.com/get-data")
-          .then((response) => {
-            console.log("data get");
+    axios.get("https://quadb-abkv.onrender.com/fetch-data").then((response) => {
+      console.log("data fetched", response);
+      axios
+        .get("https://quadb-abkv.onrender.com/get-data")
+        .then((response) => {
+          console.log("data get");
 
-            setData(response.data);
-          })
-          .catch((error) => {
-            setError(error);
-          })
-          .finally(() => {
-            setLoading(false);
-          });
-      });
+          setData(response.data);
+        })
+        .catch((error) => {
+          setError(error);
+        })
+        .finally(() => {
+          setLoading(false);
+        });
+    });
   }, []);
   return (
     <div className="trade-list">
