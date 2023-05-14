@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+/* dropdown */
+
+body {
+  background-color: #191d28;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+.menu-container {
+  position: relative;
+}
+
+.menu-trigger {
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  list-style-type: none;
+  margin: 5px 0;
+  padding: 0;
+  border: 1px solid grey;
+  background-color: white;
+  width: 150px;
+}
+
+.menu-item {
+  display: block;
+  padding: 5px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: lightgray;
+}
+
+/* Navbar */
+.nav-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-element > h1 {
+  color: #5dc7c2;
+  font-size: 3vw;
+  margin-left: 2vw;
+}
+
+.telegram {
+  color: white;
+  background-color: #5dc7c2;
+  font-weight: bold;
+}
+
+/* Stats */
+.stat-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.stat-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.percent-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.percent-stat h2 {
+  color: #5dc7c2;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.percent-stat h5 {
+  color: #62656c;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.stat-result h4 {
+  color: #62656c;
+  font-weight: 400;
+  font-size: 30px;
+}
+.stat-result h6 {
+  color: #62656c;
+  font-weight: 400;
+  font-size: 20px;
+}
+.stat-result h1 {
+  font-weight: 400;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+/* List  */
+.trade-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 95vw;
+  margin: auto;
+  gap: 10px;
+}
+
+.list--head {
+  color: #62656c !important;
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 95vw;
+  margin: auto;
+}
+
+.list--head > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.list--item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 95vw;
+  margin: auto;
+  font-family: Oswald;
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  background-color: #2e3241;
+  padding: 10px 0px;
+  border-radius: 10px;
+}
+
+.list--item > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.list-no {
+  flex: 0.5;
+}
+.list-platform {
+  flex: 2;
+}
+
+.list-last {
+  flex: 2;
+}
+
+.list-buy-sell {
+  flex: 2.5;
+}
+
+.list-diff {
+  flex: 1;
+}
+
+.list-saving {
+  flex: 2;
+}
