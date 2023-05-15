@@ -13,7 +13,7 @@ export default function Stats() {
         </div>
         <div className='stat-result'>
             <h4>Best Price to Trade</h4>
-            <h1>₹ 25,92,308</h1>
+            <span>₹ 25,92,308</span>
             <h6>Average BTC/INR net price including commission</h6>
         </div>
         <div className='percent-stat'>

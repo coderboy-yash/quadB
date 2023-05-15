@@ -1,7 +1,7 @@
 import "../App.css";
 
 const DropdownMenu = (props) => {
-  const { name, items=[] } = props;
+  const { name, items = [] } = props;
   return (
     <div className="dropdown">
       <button

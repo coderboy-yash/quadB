@@ -52,7 +52,7 @@ body {
 
 .telegram {
   color: white;
-  background-color: #5dc7c2;
+  background-color: #3dc6c1;
   font-weight: bold;
 }
 
@@ -66,12 +66,16 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.stat-result span {
+  font-size: 80px;
+}
 
 .stat-result {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 10px;
   gap: 10px;
 }
 .percent-stat {
@@ -161,7 +165,9 @@ body {
   justify-content: center;
   text-align: center;
 }
-
+.button-gray {
+  background-color: #fff;
+}
 .list-no {
   flex: 0.5;
 }

@@ -30,7 +30,7 @@ export default function List() {
     });
   }, []);
   return (
-    <div className="trade-list">
+    <div className="trade-list h-screen">
       <div className="list--head">
         <div className="list-no">#</div>
         <div className="list-platform">Platform</div>
